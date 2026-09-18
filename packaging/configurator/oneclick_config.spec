@@ -1,5 +1,6 @@
 # -*- mode: python ; coding: utf-8 -*-
-
+# 一键配置程序打包配置（onefile + windowed）。exe 中文名在这里（Python 文件，UTF-8 安全），
+# rebuild.bat 只引用本 spec 文件名（纯 ASCII），避免 .bat 编码问题。
 
 a = Analysis(
     ['oneclick_config.py'],
