@@ -1,10 +1,10 @@
 ; ============================================================
 ; 社媒监测洞察系统 · Windows 安装包脚本（Inno Setup 6）
 ; 编译："%LOCALAPPDATA%\Programs\Inno Setup 6\ISCC.exe" installer.iss
-; 产物：输出\社媒监测洞察系统-Setup-0.4.0.exe
+; 产物：输出\社媒监测洞察系统-Setup-0.4.1.exe
 ; ============================================================
 #define AppName "社媒监测洞察系统"
-#define AppVersion "0.4.0"
+#define AppVersion "0.4.1"
 #define AppPublisher "华为数字能源 Marketing"
 #define AppExe "社媒监测洞察系统.exe"
 

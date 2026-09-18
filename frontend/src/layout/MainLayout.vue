@@ -39,7 +39,7 @@
       </el-scrollbar>
 
       <div class="aside-foot">
-        <span class="dot"></span>服务运行中 · v0.4
+        <span class="dot"></span>服务运行中 · v0.4.1
       </div>
     </el-aside>
 

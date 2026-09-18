@@ -146,13 +146,19 @@
                 <div v-for="r in b.items" :key="r.id" class="result-row">
                   <div class="result-row-head" @click="toggleResult(r.id)">
                     <el-icon class="arrow" :class="{ open: openResults.has(r.id) }"><ArrowRight /></el-icon>
-                    <el-link type="primary" class="result-title" @click.stop="$router.push(`/articles/${r.article_id}`)">
-                      {{ articleTitle(r.article_id) }}
+                    <span class="result-title">{{ articleTitle(r.article_id) }}</span>
+                    <el-link type="info" :underline="false" class="origin-link"
+                      @click.stop="$router.push(`/articles/${r.article_id}`)">
+                      <el-icon><Document /></el-icon>原文
                     </el-link>
                     <el-tag size="small" :type="statusTag(r.status)">{{ statusText(r.status) }}</el-tag>
                     <span class="result-meta">
                       <template v-if="r.tokens">{{ r.tokens }} tokens · </template>{{ fmtTime(r.created_at) }}
                     </span>
+                    <el-button size="small" type="primary" :plain="openResults.has(r.id)"
+                      @click.stop="toggleResult(r.id)">
+                      {{ openResults.has(r.id) ? '收起分析' : '查看分析' }}
+                    </el-button>
                   </div>
                   <div v-show="openResults.has(r.id)" class="result-content">
                     <pre v-if="r.result_text || r.error" class="result-text">{{ r.result_text || r.error }}</pre>
@@ -778,7 +784,9 @@ onUnmounted(() => clearInterval(pollTimer))
   transition: background .15s ease;
 }
 .result-row-head:hover { background: var(--ink-50); }
-.result-title { flex: 1; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-weight: 500; }
+.result-title { flex: 1; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-weight: 500; color: var(--ink-900); }
+.origin-link { flex-shrink: 0; font-size: 12px; }
+.origin-link .el-icon { margin-right: 2px; vertical-align: -2px; }
 .result-meta { color: var(--ink-400); font-size: 12px; flex-shrink: 0; }
 .result-content { padding: 4px 20px 16px 46px; }
 .result-content .result-text {
