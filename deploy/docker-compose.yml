@@ -1,0 +1,43 @@
+services:
+  backend:
+    build:
+      context: ..
+      dockerfile: deploy/backend.Dockerfile
+    image: social-monitor-backend:latest
+    container_name: social-monitor-backend
+    restart: unless-stopped
+    env_file:
+      - path: ../.env
+        required: false
+    environment:
+      # 生产默认值；.env 中的同名变量会覆盖（env_file 优先级低于 environment，需覆盖时改这里）
+      APP_ENV: prod
+      PROVIDER_MOCK: "false"   # 服务器上用真实 dajiala；本地调试改 true
+    volumes:
+      - ../data:/app/data      # sqlite + exports 持久化
+    networks:
+      - appnet
+    healthcheck:
+      test: ["CMD", "curl", "-fsS", "http://127.0.0.1:8000/health"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+
+  frontend:
+    build:
+      context: ..
+      dockerfile: deploy/frontend.Dockerfile
+    image: social-monitor-frontend:latest
+    container_name: social-monitor-frontend
+    restart: unless-stopped
+    ports:
+      - "80:80"              # 对外入口；云服务器如需别的端口改这里，如 "8080:80"
+    depends_on:
+      backend:
+        condition: service_started
+    networks:
+      - appnet
+
+networks:
+  appnet:
+    driver: bridge

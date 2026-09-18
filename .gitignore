@@ -1,0 +1,43 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.egg-info/
+.pytest_cache/
+
+# Env & data
+.env
+data/
+*.db
+*.db-wal
+*.db-shm
+
+# Node
+node_modules/
+frontend/dist/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# misc
+*.log
+
+# 打包产物（PyInstaller / Inno Setup 输出）
+packaging/build/
+packaging/dist/
+packaging/输出/
+packaging/configurator/build/
+packaging/configurator/dist/
+packaging/configurator/build-config/
+packaging/configurator/dist-config/
+
+# 一键配置种子数据（含密文与分发密钥，勿提交）
+packaging/configurator/seed_data.py
+
+# 内部资料（监测账号清单等，勿外传）
+信息来源-v2-0701.xlsx
+
+# 工具会话目录
+.claude/

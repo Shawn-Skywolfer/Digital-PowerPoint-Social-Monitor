@@ -1,0 +1,821 @@
+{
+ "advanceSearch": {
+  "businessType": 0,
+  "filters": [
+   {
+    "column": 4,
+    "display": 1,
+    "options": [
+     {
+      "extReqParams": [],
+      "paramKey": "HomePageAdvanceSortType",
+      "paramValue": "0",
+      "reportId": "HomePageAdvanceSortType_0:filter_option:419091645",
+      "title": "综合排序",
+      "type": 1
+     },
+     {
+      "extReqParams": [],
+      "paramKey": "HomePageAdvanceSortType",
+      "paramValue": "1",
+      "reportId": "HomePageAdvanceSortType_1:filter_option:376946934",
+      "selected": 1,
+      "title": "最新",
+      "type": 1
+     },
+     {
+      "extReqParams": [],
+      "paramKey": "HomePageAdvanceSortType",
+      "paramValue": "2",
+      "reportId": "HomePageAdvanceSortType_2:filter_option:1021458776",
+      "title": "最热",
+      "type": 1
+     }
+    ],
+    "paramKey": "HomePageAdvanceSortType",
+    "title": "排序",
+    "type": 1
+   },
+   {
+    "column": 4,
+    "display": 1,
+    "options": [
+     {
+      "extReqParams": [],
+      "paramKey": "HomePageAdvanceSearchType",
+      "paramValue": "0",
+      "reportId": "HomePageAdvanceSearchType_0:filter_option:1515574844",
+      "title": "不限",
+      "type": 1
+     },
+     {
+      "extReqParams": [],
+      "paramKey": "HomePageAdvanceSearchType",
+      "paramValue": "1",
+      "reportId": "HomePageAdvanceSearchType_1:filter_option:1501304769",
+      "selected": 1,
+      "title": "文章",
+      "type": 1
+     },
+     {
+      "extReqParams": [],
+      "paramKey": "HomePageAdvanceSearchType",
+      "paramValue": "2",
+      "reportId": "HomePageAdvanceSearchType_2:filter_option:1421570094",
+      "title": "视频",
+      "type": 1
+     }
+    ],
+    "paramKey": "HomePageAdvanceSearchType",
+    "title": "类型",
+    "type": 1
+   },
+   {
+    "column": 4,
+    "display": 1,
+    "options": [
+     {
+      "extReqParams": [],
+      "paramKey": "HomePageAdvancePublishTime",
+      "paramValue": "0",
+      "reportId": "HomePageAdvancePublishTime_0:filter_option:1372210914",
+      "title": "不限",
+      "type": 1
+     },
+     {
+      "extReqParams": [],
+      "paramKey": "HomePageAdvancePublishTime",
+      "paramValue": "1",
+      "reportId": "HomePageAdvancePublishTime_1:filter_option:752186113",
+      "title": "最近一天",
+      "type": 1
+     },
+     {
+      "extReqParams": [],
+      "paramKey": "HomePageAdvancePublishTime",
+      "paramValue": "2",
+      "reportId": "HomePageAdvancePublishTime_2:filter_option:1839365001",
+      "selected": 1,
+      "title": "最近七天",
+      "type": 1
+     },
+     {
+      "extReqParams": [],
+      "paramKey": "HomePageAdvancePublishTime",
+      "paramValue": "3",
+      "reportId": "HomePageAdvancePublishTime_3:filter_option:939547819",
+      "title": "最近半年",
+      "type": 1
+     }
+    ],
+    "paramKey": "HomePageAdvancePublishTime",
+    "title": "时间",
+    "type": 1
+   },
+   {
+    "column": 4,
+    "display": 1,
+    "options": [
+     {
+      "extReqParams": [],
+      "paramKey": "HomePageAdvanceSearchScope",
+      "paramValue": "0",
+      "reportId": "HomePageAdvanceSearchScope_0:filter_option:1187652476",
+      "selected": 1,
+      "title": "不限",
+      "type": 1
+     },
+     {
+      "extReqParams": [],
+      "paramKey": "HomePageAdvanceSearchScope",
+      "paramValue": "1",
+      "reportId": "HomePageAdvanceSearchScope_1:filter_option:1143436159",
+      "title": "已关注",
+      "type": 1
+     },
+     {
+      "extReqParams": [],
+      "paramKey": "HomePageAdvanceSearchScope",
+      "paramValue": "2",
+      "reportId": "HomePageAdvanceSearchScope_2:filter_option:979295944",
+      "title": "最近看过",
+      "type": 1
+     },
+     {
+      "extReqParams": [],
+      "paramKey": "HomePageAdvanceSearchScope",
+      "paramValue": "3",
+      "reportId": "HomePageAdvanceSearchScope_3:filter_option:1029137118",
+      "title": "朋友赞过",
+      "type": 1
+     }
+    ],
+    "paramKey": "HomePageAdvanceSearchScope",
+    "title": "范围",
+    "type": 1
+   }
+  ],
+  "isHold": 1,
+  "rules": "[{\"condition\":[{\"paramKey\":\"HomePageAdvanceSearchType\",\"paramValue\":\"1\"}],\"disabled\":[{\"paramKey\":\"HomePageAdvanceSearchScope\",\"paramValue\":\"3\"}]},{\"condition\":[{\"paramKey\":\"HomePageAdvanceSearchScope\",\"paramValue\":\"3\"}],\"disabled\":[{\"paramKey\":\"HomePageAdvanceSearchType\",\"paramValue\":\"0\"},{\"paramKey\":\"HomePageAdvanceSearchType\",\"paramValue\":\"1\"}],\"selected\":[{\"paramKey\":\"HomePageAdvanceSearchType\",\"paramValue\":\"2\"}]},{\"condition\":[{\"paramKey\":\"HomePageAdvanceSearchType\",\"paramValue\":\"2\"}],\"disabled\":[{\"paramKey\":\"HomePageAdvanceSearchScope\",\"paramValue\":\"8\"},{\"paramKey\":\"HomePageAdvanceSearchScope\",\"paramValue\":\"9\"}]},{\"condition\":[{\"paramKey\":\"HomePageAdvanceSearchScope\",\"paramValue\":\"9\"}],\"disabled\":[{\"paramKey\":\"HomePageAdvanceSearchType\",\"paramValue\":\"0\"},{\"paramKey\":\"HomePageAdvanceSearchType\",\"paramValue\":\"2\"}],\"selected\":[{\"paramKey\":\"HomePageAdvanceSearchType\",\"paramValue\":\"1\"}]},{\"condition\":[{\"paramKey\":\"HomePageAdvanceSearchScope\",\"paramValue\":\"8\"}],\"disabled\":[{\"paramKey\":\"HomePageAdvanceSearchType\",\"paramValue\":\"0\"},{\"paramKey\":\"HomePageAdvanceSearchType\",\"paramValue\":\"2\"}],\"selected\":[{\"paramKey\":\"HomePageAdvanceSearchType\",\"paramValue\":\"1\"}]}]",
+  "showType": 3,
+  "title": "已选择：最新、文章、最近七天"
+ },
+ "category": [
+  {
+   "selected": 1,
+   "type": 0,
+   "word": "全部"
+  },
+  {
+   "type": 2,
+   "word": "文章"
+  },
+  {
+   "type": 1,
+   "word": "公众号"
+  },
+  {
+   "extReqParams": [
+    {
+     "key": "modelName",
+     "textValue": "hunyuan-t1-turbos"
+    },
+    {
+     "key": "modelType",
+     "textValue": "t1"
+    },
+    {
+     "key": "fastModelType",
+     "textValue": "fast"
+    }
+   ],
+   "extra_kvs": [
+    {
+     "key": "modelName",
+     "value": "hunyuan-t1-turbos"
+    },
+    {
+     "key": "modelType",
+     "value": "t1"
+    },
+    {
+     "key": "fastModelType",
+     "value": "fast"
+    }
+   ],
+   "type": 53,
+   "word": "AI搜索"
+  },
+  {
+   "type": 262208,
+   "word": "小程序"
+  },
+  {
+   "type": 7,
+   "word": "视频号"
+  },
+  {
+   "type": 9,
+   "word": "直播"
+  },
+  {
+   "type": 8,
+   "word": "朋友圈"
+  },
+  {
+   "type": 1024,
+   "word": "读书"
+  },
+  {
+   "type": 512,
+   "word": "听一听"
+  },
+  {
+   "type": 384,
+   "word": "表情"
+  },
+  {
+   "type": 16777728,
+   "word": "百科"
+  },
+  {
+   "type": 16384,
+   "word": "新闻"
+  },
+  {
+   "type": 8192,
+   "word": "微信指数"
+  },
+  {
+   "extReqParams": [
+    {
+     "key": "subType",
+     "uintValue": 7
+    }
+   ],
+   "extra_kvs": [
+    {
+     "key": "subType",
+     "value": "7"
+    }
+   ],
+   "type": 524288,
+   "word": "小游戏"
+  },
+  {
+   "type": 33562630,
+   "word": "划线"
+  }
+ ],
+ "continueFlag": 1,
+ "cookies": "{\"box_offset\":15,\"businessType\":2,\"clm_box_offset\":15,\"clm_sub_box_offset\":15,\"cookies_buffer\":\"UqIECGIQABgAIgzmlbDlrZfog73mupAyiwMweDItMC0xMTE2ODIwNDY1MDIzOTAxNjEzNzsweDItMC0xMjgzNjYyOTU2MzM0NTQ0NTA1MTsweDItMC0yOTM1OTEwODkwNDkxNTY2NDc2OzB4Mi0wLTE4ODQzMTc5OTE2MTk5MjM5MTA7MHgyLTAtMTIxOTA1NDczNjM1ODQ5NTg5MjA7MHgyLTAtMTI4MDgyMDE3OTAzMjEwMDg1NzQ7MHgyLTAtMTUyODU0MzQ4Mjk5ODExMTQ3ODQ7MHgyLTAtNDE2MzI3NTEzNTg3NTcxNDAwMTsweDItMC03NTA3MzMxNDQzMzAxNjAyODc4OzB4Mi0wLTIyNDU5MzMwOTUzMTYxOTk0MjQ7MHgyLTAtMTc1NzU2MzM1MzkxMTc3NzM5NjU7MHgyLTAtODkxMzkzNTY0MzI5NzI1NjY7MHgyLTAtMjY3NjQyODI5NDMzNjg3OTE0NjsweDItMC01ODE0MzYwNzA5NTgyNzM3ODIxOzB4Mi0wLTE2NTYxMTUyMjE1NTQ2OTIyMzkwO0APSBJQAloId3hzZWFyY2iCAQIQALIBAhgA8gETNDQ1MDEzMzkxNTc3NjI0NTE4MfoBOgix2p3dqu6V6xgQmNPAu8T3lgMaDOaVsOWtl+iDvea6kCBiKhM0NDUwMTMzOTE1Nzc2MjQ1MTgxMACaAxBCAHIAigEAkgEAugEA2gEA\",\"doc_offset\":18,\"dup_bf\":\"0x2-0-11168204650239016137;0x2-0-12836629563345445051;0x2-0-2935910890491566476;0x2-0-1884317991619923910;0x2-0-12190547363584958920;0x2-0-12808201790321008574;0x2-0-15285434829981114784;0x2-0-4163275135875714001;0x2-0-7507331443301602878;0x2-0-2245933095316199424;0x2-0-17575633539117773965;0x2-0-89139356432972566;0x2-0-2676428294336879146;0x2-0-5814360709582737821;0x2-0-16561152215546922390;\",\"isHomepage\":1,\"page_cnt\":2,\"query\":\"数字能源\",\"scene\":98}\n",
+ "data": [
+  {
+   "boxID": "0x2-0-11168204650239016137",
+   "boxPos": 1,
+   "boxPosMerge": 1,
+   "count": 1,
+   "items": [
+    {
+     "date": 1789710283,
+     "desc": "PART 03产业生态联动：催生<em class=\"highlight\">数字能源</em>全新应用场景平陆运河的<em class=\"highlight\">数字能源</em>价值，不止于工程自身的节能降碳，更在于以世纪工程为载体，带动沿线产业、配套服务、就业领域的数字化绿色化转型，催生海量<em class=\"highlight\">数字能源</em>新场景、新赛道",
+     "docID": "11168204650239016137",
+     "docType": 0,
+     "doc_url": "http://mp.weixin.qq.com/s?__biz=MzY5NjA0MTAwMg==&mid=2247492367&idx=3&sn=cb0372325f155d11c4232bae435b5378&chksm=f58e4cb54a813d97ab14c6692c65dd6c555f2a48bd20c9c59c1cd78edb983f83a27467f869bb&scene=7#rd",
+     "itemShowType": 0,
+     "mpScene": 7,
+     "reportId": "11168204650239016137:mp:282004",
+     "report_extinfo_str": "src_channel%3D2591037079_2_0_4075929821_13%26tuple%3D3696041002_2247492367_3",
+     "source": {
+      "dateTime": "1小时前",
+      "title": "新数字能源"
+     },
+     "src_type": 49,
+     "thumbUrl": "https://mmbiz.qpic.cn/sz_mmbiz_jpg/mibsTOAY0XDsCIhTsePb7ew1bnn7eHnd20kULDl6hic6xu3htm8Un6XqZ8iaPl3gSiaXV1HQol4X08ulQ4RCZCpT2dbujYtaJnia9k0J353lAvUc/0?wx_fmt=jpeg",
+     "timestamp": 1789710283,
+     "title": "2026年9月通航、4年攻坚134.2公里平陆运河，搭载2万+感知设备，成全国首个智慧低碳运河，给交通<em class=\"highlight\">数字能源</em>转型指明什么新方向？"
+    }
+   ],
+   "real_type": 2,
+   "resultType": 0,
+   "subType": 0,
+   "totalCount": 78,
+   "type": 2,
+   "useNativeRender": false
+  },
+  {
+   "boxID": "0x2-0-12836629563345445051",
+   "boxPos": 2,
+   "boxPosMerge": 2,
+   "count": 1,
+   "items": [
+    {
+     "date": 1789691249,
+     "desc": "在<em class=\"highlight\">数字能源</em>语境里，EPES可理解为Electric Power & Energy System（电力能源系统）的数字化智能化体系——它不只是把云、大、物、智、5G塞进电厂和变电站，而是把“源、网、荷、储、市、碳”重做一遍：感知靠物联网，决策靠大数据",
+     "docID": "12836629563345445051",
+     "docType": 0,
+     "doc_url": "http://mp.weixin.qq.com/s?__biz=MzIwNDA0MTI5OA==&mid=2649256517&idx=2&sn=838a45ed6398e1c6103afe43a53d5339&chksm=8fe9d22c3400b0a9b44a3b02d1d71d50410946f9b8108000898fa6473ef6af27e5636f6a4377&scene=7#rd",
+     "itemShowType": 0,
+     "mpScene": 7,
+     "reportId": "12836629563345445051:mp:820550",
+     "report_extinfo_str": "src_channel%3D2591037079_2_0_4075929821_13%26tuple%3D3204041298_2649256517_2",
+     "source": {
+      "dateTime": "6小时前",
+      "title": "EPES数字能源"
+     },
+     "src_type": 49,
+     "thumbUrl": "https://mmbiz.qpic.cn/mmbiz_jpg/Y7JoXv1jD3QKdWNbEO3GQOYy5MF4fam2Ew2cWBTM4o6TJ1xIPrgPw3YicAbyw2fPhv25OWdeNiawvLtViaNVWDS9BjBC3JnibE9nibrBYTwSn1Uo/0?wx_fmt=jpeg",
+     "timestamp": 1789691249,
+     "title": "南瑞、华为、朗新、东方电子、清能互联……一文看懂<em class=\"highlight\">数字能源</em>生态圈"
+    }
+   ],
+   "real_type": 2,
+   "resultType": 0,
+   "subType": 0,
+   "totalCount": 78,
+   "type": 2,
+   "useNativeRender": false
+  },
+  {
+   "boxID": "0x2-0-2935910890491566476",
+   "boxPos": 3,
+   "boxPosMerge": 3,
+   "count": 1,
+   "items": [
+    {
+     "date": 1789687320,
+     "desc": "华为<em class=\"highlight\">数字能源</em>发布FusionSolar 9.0智能光储解决方案。储能技术持续向大容量、高安全、构网型演进，新能源大规模接入有了更可靠的支撑手段。展会的吸引力，还体现在国际参与度上。",
+     "docID": "2935910890491566476",
+     "docType": 0,
+     "doc_url": "http://mp.weixin.qq.com/s?__biz=MzkxNTc0Njk3NA==&mid=2247505558&idx=4&sn=e637cad9a267d02d389233cdc7cd4b72&chksm=c05343fa1a28da461525f488c7a090625040174c64a6f6ecd8ef96854442bc7c6dc7a6ad1782&scene=7#rd",
+     "itemShowType": 0,
+     "mpScene": 7,
+     "reportId": "2935910890491566476:mp:336970",
+     "report_extinfo_str": "src_channel%3D2591037079_4096_0_2893846665_13%26tuple%3D3915746974_2247505558_4",
+     "source": {
+      "dateTime": "7小时前",
+      "title": "深圳新型储能产业协会"
+     },
+     "src_type": 49,
+     "thumbUrl": "https://mmbiz.qpic.cn/sz_mmbiz_jpg/icWbuDC3zyFhnMKAnqPPqJFKpSc2EPp5EX1pMsnyZGAS3JDMH6jf8dg4jiaPkuGNfbRicAaIxZGJwicxGEFTCNDeCWvZb5x1s5HgDDE1rHGLrNs/0?wx_fmt=jpeg",
+     "timestamp": 1789687320,
+     "title": "深耕国际对接，赋能储能出海｜2026国际<em class=\"highlight\">数字能源</em>展收官复盘"
+    }
+   ],
+   "real_type": 2,
+   "resultType": 0,
+   "subType": 0,
+   "totalCount": 78,
+   "type": 2,
+   "useNativeRender": false
+  },
+  {
+   "boxID": "0x2-0-1884317991619923910",
+   "boxPos": 4,
+   "boxPosMerge": 4,
+   "count": 1,
+   "items": [
+    {
+     "date": 1789661469,
+     "desc": "9月15日至17日，2026能源绿色发展大会与2026国际<em class=\"highlight\">数字能源</em>展在深圳会展中心举行。本届展会集中展示近100项<em class=\"highlight\">数字能源</em>创新成果，覆盖新型储能、光伏逆变器、构网技术、家庭光储以及AI能源管理等多个方向。",
+     "docID": "1884317991619923910",
+     "docType": 0,
+     "doc_url": "http://mp.weixin.qq.com/s?__biz=MzYzMjA2OTkwOA==&mid=2247499029&idx=1&sn=45b1906cfd7b9fe8ddef8fc5b9e6f3b5&chksm=f1cc8f6e6f3c25e9c3f1c19f5ed9c9d7a00507e68e4b0d6d58671f071a832e62ffd32eb8c9aa&scene=7#rd",
+     "itemShowType": 0,
+     "mpScene": 7,
+     "reportId": "1884317991619923910:mp:534672",
+     "report_extinfo_str": "src_channel%3D2591037079_2_0_4075929821_13%26tuple%3D3632069908_2247499029_1",
+     "source": {
+      "dateTime": "14小时前",
+      "title": "电派储能"
+     },
+     "src_type": 49,
+     "thumbUrl": "https://mmbiz.qpic.cn/sz_mmbiz_jpg/VuOYOm8nBx7g41icQrXOchIKkLECCVLTLScJCg5DXRvLMeT92d3bwdxCBYM6K3iaZ3fBwbonqAyibrhCibKBsfg8Mk2PRXfQUw2cFiaWKbuqjpwo/0?wx_fmt=jpeg",
+     "timestamp": 1789661469,
+     "title": "大储、家储、逆变器等全面升级，2026国际<em class=\"highlight\">数字能源</em>展看点"
+    }
+   ],
+   "real_type": 2,
+   "resultType": 0,
+   "subType": 0,
+   "totalCount": 78,
+   "type": 2,
+   "useNativeRender": false
+  },
+  {
+   "boxID": "0x2-0-12190547363584958920",
+   "boxPos": 5,
+   "boxPosMerge": 5,
+   "count": 1,
+   "items": [
+    {
+     "date": 1789659043,
+     "desc": "9月15日下午，2026能源绿色发展大会·国际<em class=\"highlight\">数字能源</em>展论坛活动在深圳会展中心5号馆成功举办。本次论坛汇聚全球能源领域顶尖专家、行业领袖及国际组织代表，共话<em class=\"highlight\">数字能源</em>未来趋势，共谋能源高质量发展新路径。",
+     "docID": "12190547363584958920",
+     "docType": 0,
+     "doc_url": "http://mp.weixin.qq.com/s?__biz=MzU2NTY0NTExMA==&mid=2247622501&idx=2&sn=a5fd41af81e7973a88b59c31da7aaba7&chksm=fd921de956c17b29506de2147562d6104211e70711207a67adb313a9adf719dc321fcf315fdd&scene=7#rd",
+     "itemShowType": 0,
+     "mpScene": 7,
+     "reportId": "12190547363584958920:mp:55771",
+     "report_extinfo_str": "src_channel%3D2591037079_2_0_4075929821_13%26tuple%3D3565645110_2247622501_2",
+     "source": {
+      "dateTime": "15小时前",
+      "title": "会展之家"
+     },
+     "src_type": 49,
+     "thumbUrl": "https://mmbiz.qpic.cn/mmbiz_jpg/I0Ps2Y03ewSvraibqTC63XoqIy8KmpgWEhbGHkFU81ZbDjfvn9lL5qULiaUEmPPJ7O7Uia2fLQ930tYcDBR2Fl9iaIicd4FyNgq8cS6ljWpTvoj4/0?wx_fmt=jpeg",
+     "timestamp": 1789659043,
+     "title": "聚焦算电协同 共绘能源新篇｜2026能源绿色发展大会·国际<em class=\"highlight\">数字能源</em>展论坛成功举办"
+    }
+   ],
+   "real_type": 2,
+   "resultType": 0,
+   "subType": 0,
+   "totalCount": 78,
+   "type": 2,
+   "useNativeRender": false
+  },
+  {
+   "boxID": "0x2-0-12808201790321008574",
+   "boxPos": 6,
+   "boxPosMerge": 6,
+   "count": 1,
+   "items": [
+    {
+     "date": 1789640829,
+     "desc": "围绕这一变化，星星充电推动<em class=\"highlight\">数字</em>化战略升级，搭建覆盖“云-管-端”（软件+服务+硬件）的<em class=\"highlight\">数字能源</em>平台体系，自主研发的三网融合平台、太乙交易平台等核心产品，把<em class=\"highlight\">能源</em>数据采集、设备管理、负荷调节、电力交易与智能运",
+     "docID": "12808201790321008574",
+     "docType": 0,
+     "doc_url": "http://mp.weixin.qq.com/s?__biz=MzE5ODQ1NzM2Ng==&mid=2247484267&idx=1&sn=e20499014debeaacd9b98495f8b593e7&chksm=97e1ae88f6ba453b3e63a66e06d71af36c66c63907f7196e26175ea6be42f37bdb4546ab7958&scene=7#rd",
+     "itemShowType": 0,
+     "mpScene": 7,
+     "reportId": "12808201790321008574:mp:718078",
+     "report_extinfo_str": "src_channel%3D2591037079_2_0_4075929821_13%26tuple%3D3198457366_2247484267_1",
+     "source": {
+      "dateTime": "20小时前",
+      "title": "科技前锋思维"
+     },
+     "src_type": 49,
+     "thumbUrl": "https://mmbiz.qpic.cn/sz_mmbiz_jpg/BIF58fAvK1zpianheV0UMtTZxzsPx93tbfvwEa8hQ0qMheia1qHxul51Aem3ETqCURDM86MmGsaUhwn6O8ubiaZ7F6uib87eOsEhjtMAGvYmNDg/0?wx_fmt=jpeg",
+     "timestamp": 1789640829,
+     "title": "星星充电深耕<em class=\"highlight\">数字能源</em>建设，能源转型的图景，正由一个个具体的场景共同写就"
+    }
+   ],
+   "real_type": 2,
+   "resultType": 0,
+   "subType": 0,
+   "totalCount": 78,
+   "type": 2,
+   "useNativeRender": false
+  },
+  {
+   "boxID": "0x2-0-15285434829981114784",
+   "boxPos": 7,
+   "boxPosMerge": 7,
+   "count": 1,
+   "items": [
+    {
+     "date": 1789631900,
+     "desc": "华为<em class=\"highlight\">数字能源</em> 2025 年营收 773.12 亿元，同比增长 12.7%，是华为集团第三大业务板块。它对外讲的技术叫\"4T\"——Bit（数字）、Watt（电力电子）、Heat（热管理）、Battery（储能），翻译过来就是五个字：比特管理瓦特。",
+     "docID": "15285434829981114784",
+     "docType": 0,
+     "doc_url": "http://mp.weixin.qq.com/s?__biz=MzY4MjI3MjQxOA==&mid=2247484961&idx=1&sn=8821df7e0d903ac92ac58b65b76f504c&chksm=f2bfb5b144b7901415538e4633b21cd009ece9d82bac7bafea1d7e4b6ba76d745b42fe40c0ac&scene=7#rd",
+     "itemShowType": 0,
+     "mpScene": 7,
+     "reportId": "15285434829981114784:mp:217870",
+     "report_extinfo_str": "src_channel%3D2591037079_2_0_4075929821_13%26tuple%3D3682272418_2247484961_1",
+     "source": {
+      "dateTime": "22小时前",
+      "title": "酉泽新能源2050"
+     },
+     "src_type": 49,
+     "thumbUrl": "https://mmbiz.qpic.cn/sz_mmbiz_jpg/duGK0VCiciaE7iaN9aCIic0pb9g8xM8Y07CKbZUYuZePCswZBfYhd7hlA29QIGxicBPUQa7zCAYS0K4oHhk2ia1JBHYibTaWQFP7cLvPcATssr7Zic8/0?wx_fmt=jpeg",
+     "timestamp": 1789631900,
+     "title": "华为<em class=\"highlight\">数字能源</em>，到底站在哪一层"
+    }
+   ],
+   "real_type": 2,
+   "resultType": 0,
+   "subType": 0,
+   "totalCount": 78,
+   "type": 2,
+   "useNativeRender": false
+  },
+  {
+   "boxID": "0x2-0-4163275135875714001",
+   "boxPos": 8,
+   "boxPosMerge": 8,
+   "count": 1,
+   "items": [
+    {
+     "date": 1789629696,
+     "desc": "<em class=\"highlight\">数字能源</em>品质服务之城 推出综合能源、“能源+”、商法财金智三大特色服务，引领交能融合、算电协同跨界创新。03 电碳融合价值发现之城 创新碳服务、绿电绿证交易、“电碳+”业态。",
+     "docID": "4163275135875714001",
+     "docType": 0,
+     "doc_url": "http://mp.weixin.qq.com/s?__biz=MzkyNjY2ODQ1Mw==&mid=2247520961&idx=1&sn=dca7b1b77e4ea0797d0d50144889191e&chksm=c3f31449c8cab01351ced988ded02e84681c76d053162d6c5e6de7a2f6eb534aed28b326fb37&scene=7#rd",
+     "itemShowType": 0,
+     "mpScene": 7,
+     "reportId": "4163275135875714001:mp:337697",
+     "report_extinfo_str": "src_channel%3D2591037079_2_0_4075929821_13%26tuple%3D3926668453_2247520961_1",
+     "source": {
+      "dateTime": "23小时前",
+      "title": "深国创中心"
+     },
+     "src_type": 49,
+     "thumbUrl": "https://mmbiz.qpic.cn/mmbiz_jpg/BQTw1UOOicPlYgDrSYPzFzwhvCLhnnsvtShibqn8dkWnRcjVje9JVJPraYZtHsibP2CrxUfDS89ysQ6S8JUfTNZPDRYeMlaGUHALT9PxRkC1ibo/0?wx_fmt=jpeg",
+     "timestamp": 1789629696,
+     "title": "预见能源，智变未来——《2026深圳<em class=\"highlight\">数字能源</em>白皮书》重磅发布，解码能源转型的“深圳方案”"
+    }
+   ],
+   "real_type": 2,
+   "resultType": 0,
+   "subType": 0,
+   "totalCount": 78,
+   "type": 2,
+   "useNativeRender": false
+  },
+  {
+   "boxID": "0x2-0-7507331443301602878",
+   "boxPos": 9,
+   "boxPosMerge": 9,
+   "count": 1,
+   "items": [
+    {
+     "date": 1789627800,
+     "desc": "华为<em class=\"highlight\">数字能源</em>华为<em class=\"highlight\">数字能源</em>推出源网荷储AIDC解决方案，打造中小AIDC推理一站式解决方案，并发布FusionSolar9.0智能光储解决方案。华为FusionSolar Agent，通过“算力底座、电力模型、智能装备、智能体”四层AI架构，重构电站全生命",
+     "docID": "7507331443301602878",
+     "docType": 0,
+     "doc_url": "http://mp.weixin.qq.com/s?__biz=MzYyNTI5Njk0OQ==&mid=2247651618&idx=2&sn=b9db5743a1856d5d078619d9192e116a&chksm=f1986734ad916fc433a3e2a0ea1275659ce3e3a4f6558f9691574555a3af0bd0bdd31898091e&scene=7#rd",
+     "itemShowType": 0,
+     "mpScene": 7,
+     "reportId": "7507331443301602878:mp:538716",
+     "report_extinfo_str": "src_channel%3D2591037079_4096_0_2893846665_13%26tuple%3D3625296949_2247651618_2",
+     "source": {
+      "dateTime": "23小时前",
+      "title": "先进电池材料产业集群"
+     },
+     "src_type": 49,
+     "thumbUrl": "https://mmbiz.qpic.cn/sz_mmbiz_jpg/OVZBUyCibGibmGXqCM5bFNo6tAgufkial6lKf5Qb5VYIpicypSCsdn0OPcGHoAKYgzQ9qoKPo2FhYWTUcicADpFedicQqDJ3TlXuzsTm5bQf71lhk/0?wx_fmt=jpeg",
+     "timestamp": 1789627800,
+     "title": "【ABMC新闻】比亚迪、欣旺达、华为等集中亮相，2026国际<em class=\"highlight\">数字能源</em>展彰显深圳能源创新硬实力"
+    }
+   ],
+   "real_type": 2,
+   "resultType": 0,
+   "subType": 0,
+   "totalCount": 78,
+   "type": 2,
+   "useNativeRender": false
+  },
+  {
+   "boxID": "0x2-0-2245933095316199424",
+   "boxPos": 10,
+   "boxPosMerge": 10,
+   "count": 1,
+   "items": [
+    {
+     "date": 1789617823,
+     "desc": "而这场重构的核心命题，是如何用<em class=\"highlight\">数字能源</em>技术，让一张传统配电网同时接住海量分布式电源、电动汽车充电负荷和新型储能接入三重压力。016000万千瓦意味着什么",
+     "docID": "2245933095316199424",
+     "docType": 0,
+     "doc_url": "http://mp.weixin.qq.com/s?__biz=MzY5NjA0MTAwMg==&mid=2247492284&idx=1&sn=ece0fbec0bd0dbec824094466dd2737c&chksm=f57f4fc43c2e78f551be0212d2b5830768a16c7ad875c0fc71f54fef73a0be32bd017a0b2faf&scene=7#rd",
+     "itemShowType": 0,
+     "mpScene": 7,
+     "reportId": "2245933095316199424:mp:276578",
+     "report_extinfo_str": "src_channel%3D2591037079_2_0_4075929821_13%26tuple%3D3696041002_2247492284_1",
+     "source": {
+      "dateTime": "1天前",
+      "title": "新数字能源"
+     },
+     "src_type": 49,
+     "thumbUrl": "https://mmbiz.qpic.cn/sz_mmbiz_jpg/mibsTOAY0XDvVibQxJ2DicgM3c0TUa5TriafVgM6RcND4lDNDm2l11fTYOOXhocckpOTewYB5OnVAUcDTKvURhwpKeII5koTMjjhekzMYjRt9tI/0?wx_fmt=jpeg",
+     "timestamp": 1789617823,
+     "title": "新政出炉：十五五固投4万亿，年均新增 6000 万千瓦分布式电源，配网扩容 9 亿千伏安，虚拟电厂 5000 万千瓦，<em class=\"highlight\">数字能源</em>靠什么改造传统配网"
+    }
+   ],
+   "real_type": 2,
+   "resultType": 0,
+   "subType": 0,
+   "totalCount": 78,
+   "type": 2,
+   "useNativeRender": false
+  },
+  {
+   "boxID": "0x2-0-17575633539117773965",
+   "boxPos": 11,
+   "boxPosMerge": 11,
+   "count": 1,
+   "items": [
+    {
+     "date": 1789614045,
+     "desc": "这个 Demo 背靠数智<em class=\"highlight\">能源</em>管理平台的业务框架，覆盖了园区<em class=\"highlight\">能源</em>管理的核心场景：3D 园区总览园区建筑 1：1 立体呈现，建筑外观区分厂房、办公楼、配电间、储罐区；",
+     "docID": "17575633539117773965",
+     "docType": 0,
+     "doc_url": "http://mp.weixin.qq.com/s?__biz=MzA4OTAwMzMxNQ==&mid=2648160496&idx=1&sn=4e5f8fc067cd4667f9cde534ebf0a915&chksm=89cc367e4c5c0de1502dd68cd9a4039a4c55064e313a26c24fa7b5d21eeda975b123023309c9&scene=7#rd",
+     "itemShowType": 0,
+     "mpScene": 7,
+     "reportId": "17575633539117773965:mp:601723",
+     "report_extinfo_str": "src_channel%3D2591037079_2_0_4075929821_13%26tuple%3D3089003315_2648160496_1",
+     "source": {
+      "dateTime": "1天前",
+      "title": "运维小助理"
+     },
+     "src_type": 49,
+     "thumbUrl": "https://mmbiz.qpic.cn/sz_mmbiz_jpg/Q4crofP9xrSibib048rI5p0iaybREPhjX3Rl4jMyTOmKU6ybo0ADXwROlozKKvh1LLhRFStvcK6qB7g3hewdvUqHl52lkGbbqg575GSicriaeOh4/0?wx_fmt=jpeg",
+     "timestamp": 1789614045,
+     "title": "我用 AI 做了一个 3D <em class=\"highlight\">数字能源</em>管理平台，园区终于能\"看\"清楚了"
+    }
+   ],
+   "real_type": 2,
+   "resultType": 0,
+   "subType": 0,
+   "totalCount": 78,
+   "type": 2,
+   "useNativeRender": false
+  },
+  {
+   "boxID": "0x2-0-89139356432972566",
+   "boxPos": 12,
+   "boxPosMerge": 12,
+   "count": 1,
+   "items": [
+    {
+     "date": 1789606800,
+     "desc": "<em class=\"highlight\">数字能源</em>新型负荷 爆发式增长 记者今天（16日）从中国电力企业联合会了解到，今年以来，以互联网数据和充换电服务业为代表的<em class=\"highlight\">数字能源</em>新型负荷增长迅猛，全国互联网数据服务业用电量已超过600亿千瓦时，同比增长超过四",
+     "docID": "89139356432972566",
+     "docType": 0,
+     "doc_url": "http://mp.weixin.qq.com/s?__biz=MzA3MDk5NTY2Nw==&mid=2247489522&idx=1&sn=e39fb2aaf88ec41867276437ea4d7f16&chksm=9e669fe9d92bcca50b98c219aa20c021767dad4bf632d7cc79999ee3f6f53087807fc560eeea&scene=7#rd",
+     "itemShowType": 0,
+     "mpScene": 7,
+     "reportId": "89139356432972566:mp:698937",
+     "report_extinfo_str": "src_channel%3D2591037079_2_0_4075929821_13%26tuple%3D3070995667_2247489522_1",
+     "source": {
+      "dateTime": "1天前",
+      "title": "河南省电力职业教育集团"
+     },
+     "src_type": 49,
+     "thumbUrl": "https://mmbiz.qpic.cn/sz_mmbiz_jpg/KJ5kFuz2K947mHjJzVdDBUJibnx0zoJ82sjACnibUGaUdEQ4Pjzrx7yPyIdD14vEUXLMuDkJAdv3KkjSuqIxMeIKYdX7FsGicxBVBPicbvnhFCs/0?wx_fmt=jpeg",
+     "timestamp": 1789606800,
+     "title": "<em class=\"highlight\">数字能源</em>新型负荷爆发式增长 算力用电成新质生产力强劲引擎"
+    }
+   ],
+   "real_type": 2,
+   "resultType": 0,
+   "subType": 0,
+   "totalCount": 78,
+   "type": 2,
+   "useNativeRender": false
+  },
+  {
+   "boxID": "0x2-0-2676428294336879146",
+   "boxPos": 13,
+   "boxPosMerge": 13,
+   "count": 1,
+   "items": [
+    {
+     "date": 1789600800,
+     "desc": "华为<em class=\"highlight\">数字能源</em>推出源网荷储AIDC解决方案，打造中小AIDC推理一站式解决方案，并发布FusionSolar9.0智能光储解决方案。在“AI+能源”融合方面，深圳企业依托全国首个电力物联操作系统“电鸿”，让电表、开关、传感器、充电桩、",
+     "docID": "2676428294336879146",
+     "docType": 0,
+     "doc_url": "http://mp.weixin.qq.com/s?__biz=MzkxNTc0Njk3NA==&mid=2247505530&idx=3&sn=79622de2e38e31bbc65e601c6d739aae&chksm=c09610f847ef691f6dba717cb3f93fd30ad335f8911b3ebabd87f24c6c636863d2cf441a31fe&scene=7#rd",
+     "itemShowType": 0,
+     "mpScene": 7,
+     "reportId": "2676428294336879146:mp:105908",
+     "report_extinfo_str": "src_channel%3D2591037079_2_0_4075929821_13%26tuple%3D3915746974_2247505530_3",
+     "source": {
+      "dateTime": "1天前",
+      "title": "深圳新型储能产业协会"
+     },
+     "src_type": 49,
+     "thumbUrl": "https://mmbiz.qpic.cn/sz_mmbiz_jpg/icWbuDC3zyFjjUHhrKyvNGyXVvMPd3IPdySZq0DIjiaOh36YZrGBP7icOqIHXVBwdiakNGwBZ7LZicUk0dzRkw9Zfic8sJDL8CYXS48FlH0TQGOicw/0?wx_fmt=jpeg",
+     "timestamp": 1789600800,
+     "title": "“一会一展”首聚深圳，2026能源绿色发展大会与2026国际<em class=\"highlight\">数字能源</em>展盛大启幕"
+    }
+   ],
+   "real_type": 2,
+   "resultType": 0,
+   "subType": 0,
+   "totalCount": 78,
+   "type": 2,
+   "useNativeRender": false
+  },
+  {
+   "boxID": "0x2-0-5814360709582737821",
+   "boxPos": 14,
+   "boxPosMerge": 14,
+   "count": 1,
+   "items": [
+    {
+     "date": 1789578000,
+     "desc": "华为<em class=\"highlight\">数字能源</em>推出源网荷储AIDC解决方案，打造中小AIDC推理一站式解决方案，并发布FusionSolar9.0智能光储解决方案。在“AI+能源”融合方面，深圳企业依托全国首个电力物联操作系统“电鸿”，让电表、开关、传感器、充电桩、",
+     "docID": "5814360709582737821",
+     "docType": 0,
+     "doc_url": "http://mp.weixin.qq.com/s?__biz=MzI4ODQ3NzkwMg==&mid=2247531815&idx=3&sn=e3ebeabcd8c71f9ab36cd2f684fe6afe&chksm=ede70ccd01c7363be117b394737e2348fb3b79ffe518f4058a55db56df6385da092ae67c20ab&scene=7#rd",
+     "itemShowType": 0,
+     "mpScene": 7,
+     "reportId": "5814360709582737821:mp:273703",
+     "report_extinfo_str": "src_channel%3D2591037079_2_0_4075929821_13%26tuple%3D3288477902_2247531815_3",
+     "source": {
+      "dateTime": "1天前",
+      "title": "绿色产业联盟"
+     },
+     "src_type": 49,
+     "thumbUrl": "https://mmbiz.qpic.cn/sz_mmbiz_jpg/vRHhwH8zja3TCmWRcFkn0oCsvXjxHCt2QicwfdwL8iaTryOZDITsUaK9lJWDAUeroxU5B6uECUNz6hibOU7xfhSibI8ZbqvUWcXWDNNPQqbBk7w/0?wx_fmt=jpeg",
+     "timestamp": 1789578000,
+     "title": "国内资讯丨2026能源绿色发展大会与2026国际<em class=\"highlight\">数字能源</em>展盛大启幕"
+    }
+   ],
+   "real_type": 2,
+   "resultType": 0,
+   "subType": 0,
+   "totalCount": 78,
+   "type": 2,
+   "useNativeRender": false
+  },
+  {
+   "boxID": "0x2-0-16561152215546922390",
+   "boxPos": 15,
+   "boxPosMerge": 15,
+   "count": 1,
+   "items": [
+    {
+     "date": 1789574700,
+     "desc": "一、<em class=\"highlight\">数字能源</em>是什么？一句人话定义 <em class=\"highlight\">数字能源</em> = 能源系统 + 数字技术。传统电力行业是“哑巴系统”：电从电厂发出来，流过电网，进到你家，中间发了多少、损耗多少、哪里浪费了，基本靠人工抄表和经验估算。",
+     "docID": "16561152215546922390",
+     "docType": 0,
+     "doc_url": "http://mp.weixin.qq.com/s?__biz=MzAwNDAyODM0NA==&mid=2657851759&idx=8&sn=4fcce4b8283e59379fa42ba7523fa7f7&chksm=818c00005eaed2367d8b51cc30c2eb8912e8507357dce81510ad06efc99ac01727e370783524&scene=7#rd",
+     "itemShowType": 0,
+     "mpScene": 7,
+     "reportId": "16561152215546922390:mp:912936",
+     "report_extinfo_str": "src_channel%3D2591037079_256_0_4075929821_13%26tuple%3D3004028344_2657851759_8",
+     "source": {
+      "dateTime": "1天前",
+      "title": "51学通信"
+     },
+     "src_type": 49,
+     "thumbUrl": "https://mmbiz.qpic.cn/mmbiz_jpg/ian2YMIh3mArEzicM9qPbm9qvzQh31VnO5KGoZ04wSbJmK0qIxtLeHic8KYM6a6Vk7l1s5e8R0YqvWEF2OMeC5dOicoCxEh421AXcTuGotuGsTE/0?wx_fmt=jpeg",
+     "timestamp": 1789574700,
+     "title": "什么是<em class=\"highlight\">数字能源</em>？给电力装上大脑"
+    }
+   ],
+   "real_type": 2,
+   "resultType": 0,
+   "subType": 0,
+   "totalCount": 78,
+   "type": 2,
+   "useNativeRender": false
+  }
+ ],
+ "direction": 2,
+ "enableQuestionClosely": false,
+ "experiment": [
+  {
+   "key": "mmsearch_topqa_mergebox_combine",
+   "value": "1"
+  },
+  {
+   "key": "mmsearch_live_double_auto_play_exp",
+   "value": "1"
+  },
+  {
+   "key": "s1s_mixer_autonextpage_v2",
+   "value": "2"
+  },
+  {
+   "key": "mmsearch_add_account_icon",
+   "value": "1"
+  },
+  {
+   "key": "mmsearch_new_category_exp",
+   "value": "-2"
+  },
+  {
+   "key": "mmsearch_exp_financial_style",
+   "value": "2"
+  },
+  {
+   "key": "mmsearch_pc_chatbot_height_line",
+   "value": "10"
+  },
+  {
+   "key": "mmsearch_topqa_related_question_enforce_style",
+   "value": "1"
+  }
+ ],
+ "isAutoPlayVideo": 1,
+ "isDivide": 1,
+ "isHomePage": 1,
+ "lang": "zh_CN",
+ "offset": 18,
+ "pageNumber": 2,
+ "query": "数字能源",
+ "resultType": 0,
+ "ret": 0,
+ "searchID": "1789714051944115505",
+ "sidedata": null,
+ "timeStamp": 1789714071,
+ "useNativeRender": false,
+ "code": 0,
+ "cost_money": 0.5,
+ "remain_money": 234.72
+}
